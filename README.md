@@ -22,7 +22,7 @@ Steps on how to run the code:
 6. Finally the output with the suggested stops will be displayed.
 
 Pseudocode 1:
-'''TravelGraph():
+///TravelGraph():
 city = current city/node
 next = next city/node
 previous = previous city/node
@@ -51,7 +51,7 @@ currentCharge -= current.nextCost
 current = current.next Else:
 currentCharge = carMaxCharge stopsList.append(current.city) currentCharge -= current.nextCost current = current.next
 stopsList.append(cityList[-1])
-print("Output-> Here are the suggested stops: " + str(stopsList))'''
+print("Output-> Here are the suggested stops: " + str(stopsList))///
 
 The time complexity for the above code is linear that is O(n) where n is the number of cities.
 Input example 1:
@@ -85,8 +85,10 @@ name.
 3. Enter the cost of travelling in the order of the city names entered in step 2 (with spaces
 in between). Do not enter space after the last cost of travelling value.
 4. The final output with the list of suggested stops wil be displayed.
+
 Pseudocode 2:
-maxCharge = max mileage that car gives per charge cityList = list of cities/nodes
+
+///maxCharge = max mileage that car gives per charge cityList = list of cities/nodes
 vertexCostList = Enter the list of costs
 if len(vertexCostList) != len(cityList) - 1:
 print("Error: The number of vertices/costs should be equal to number of nodes - 1") else:
@@ -99,7 +101,8 @@ if currentCarCharge >= vertexCostList[i] * 2:
 currentCarCharge -= vertexCostList[i] Else:
 currentCarCharge = maxCharge currentCarCharge -= vertexCostList[i] stopsList.append(cityList[i])
 stopsList.append(cityList[-1])
-print("Output-> Here are the suggested stops: " + str(stopsList))
+print("Output-> Here are the suggested stops: " + str(stopsList))///
+
 The time complexity for the above code is linear that is O(n) again, where n is the number of cities.
 The space complexity is however optimized using list data structure.
 Input example 1:
