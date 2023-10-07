@@ -5,7 +5,8 @@ L is if minimum length among all possible list of cities
 the starting city, which is the first city, is the first element of L
 The destination city, which is the last city, is the last element of L
 If j and k are two consecutive cities in L, then when the car is in city j, the car is able to drive to city k and back to the city before city k, in case the charge station in city k is broken.
-The capacity C in miles is not fixed, but one can assume that is a positive integer between 250 and 350. The number of cities n is not fixed, but you can assume that it is greater than 3 and less than 20. The distance between cities is a positive integer and always less than C/2 and greater than 10.
+The capacity C in miles is not fixed, but one can assume that is a positive integer between 250 and 350. The number of cities n is not fixed, but you can assume that it is greater than 3 and less than 20. The distance between cities is a 
+positive integer and always less than C/2 and greater than 10.
 
 ## Summary -
 The above problem has been solved using Python language. The logic behind our designed algorithm is that the at every stop, the car should have charge which is twice the cost of travelling from one particular stop to the next stop so that if the next stop is not functional, and the car does not have enough charge to travel to the next stop, then it must have enough charge to get back to the previous stop at least. The time complexity for the designed algorithm is linear : O(n). As far as space complexity is concerned, we first used linked list as the data structure for solving the problem. But upon further analysis we found that the space complexity of the problem can be further improved if we use lists instead of a linked list. Therefore, we again solved the problem using list data structure.
