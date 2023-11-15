@@ -1,5 +1,6 @@
 # Electric Car Problem
 ## Problem statement -
+
 Electric cars do not have as large a range as gas cars, so they need periodic recharge. Assume that one needs to travel a large distance, that cannot be done in one charge, so one needs to stop to recharge and continue. But some of the chargers may not function, in case you need to drive back to the previous city and re-charge there. Given a capacity C in miles that represents the maximum number of miles your electric car can drive, n cities and (n-1) distances between two consecutive cities, design an algorithm that outputs the list L of cities where one need to stop and charge the car such that:
 L is if minimum length among all possible list of cities
 the starting city, which is the first city, is the first element of L
